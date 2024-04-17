@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LostAndFoundApp</string>
+    <string name="lost_and_found_items"><![CDATA[LOST & FOUND ITEMS]]></string>
+    <string name="show_all_lost_and_found_items"><![CDATA[SHOW ALL LOST & FOUND ITEMS]]></string>
+</resources>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp">
+
+    <TextView
+        android:id="@+id/textViewPostTypeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="30dp"
+        android:text="Post Type:" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupPostType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@id/textViewPostTypeLabel">
+
+    <RadioButton
+        android:id="@+id/radioButtonLost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lost" />
+
+    <RadioButton
+        android:id="@+id/radioButtonFound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Found" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewNameLabel"
+        android:layout_below="@id/textViewPostTypeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewNameLabel"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/textViewPhoneLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone:"
+        android:layout_below="@id/editTextName" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewPhoneLabel"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/textViewDescriptionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description:"
+        android:layout_below="@id/editTextPhone" />
+
+    <EditText
+        android:id="@+id/editTextDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDescriptionLabel"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/textViewDateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date:"
+        android:layout_below="@id/editTextDescription" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:layout_below="@id/textViewDateLabel"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/textViewLocationLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location:"
+        android:layout_below="@id/editTextDate" />
+
+    <EditText
+        android:id="@+id/editTextLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewLocationLabel"
+        android:layout_marginBottom="5dp"/>
+
+
+    <fragment
+        android:id="@+id/autocomplete_fragment"
+        android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextLocation"
+        android:layout_marginBottom="5dp" />
+
+
+    <Button
+        android:id="@+id/buttonGetCurrentLocation"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="GET CURRENT LOCATION"
+        android:layout_below="@id/autocomplete_fragment"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="SAVE"
+        android:layout_below="@id/buttonGetCurrentLocation"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>

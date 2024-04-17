@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="30dp"
+    android:layout_marginBottom="30dp"
+    tools:context=".RemoveItemActivity">
+
+    <TextView
+        android:id="@+id/textViewTypeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type:"
+        android:layout_marginEnd="5dp"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textViewType"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/textViewTypeLabel"/>
+
+    <TextView
+        android:id="@+id/textViewNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:layout_marginEnd="5dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/textViewTypeLabel"/>
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTypeLabel"
+        android:layout_toEndOf="@id/textViewNameLabel"/>
+
+    <TextView
+        android:id="@+id/textViewPhoneLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone:"
+        android:layout_marginEnd="5dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/textViewNameLabel"/>
+
+    <TextView
+        android:id="@+id/textViewPhone"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/textViewPhoneLabel"
+        android:layout_below="@id/textViewNameLabel"/>
+
+    <TextView
+        android:id="@+id/textViewDescriptionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description:"
+        android:layout_marginEnd="5dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/textViewPhoneLabel"/>
+
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/textViewDescriptionLabel"
+        android:layout_below="@id/textViewPhoneLabel"/>
+
+    <TextView
+        android:id="@+id/textViewDateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date:"
+        android:layout_marginEnd="5dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/textViewDescriptionLabel"/>
+
+    <TextView
+        android:id="@+id/textViewDate"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/textViewDateLabel"
+        android:layout_below="@id/textViewDescriptionLabel"/>
+
+    <TextView
+        android:id="@+id/textViewLocationLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location:"
+        android:layout_marginEnd="5dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/textViewDateLabel"/>
+
+    <TextView
+        android:id="@+id/textViewLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_toEndOf="@id/textViewLocationLabel"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/textViewDateLabel"/>
+
+    <Button
+        android:id="@+id/removeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewLocationLabel"
+        android:layout_marginTop="40dp"
+        android:text="REMOVE"/>
+
+</RelativeLayout>
